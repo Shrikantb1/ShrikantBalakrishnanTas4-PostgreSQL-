@@ -22,7 +22,16 @@ d) Slice: Extract rentals only from the ‘Action’ genre.
 e) Dice: Extract rentals where GENRE = 'Action' or 'Drama' and RENTAL_DATE is in
 the last 3 months.
 
-
+CREATE DATABASE "MovieRental"
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'English_United States.1252'
+    LC_CTYPE = 'English_United States.1252'
+    LOCALE_PROVIDER = 'libc'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
 
 
 -- Table: public.rental_data
